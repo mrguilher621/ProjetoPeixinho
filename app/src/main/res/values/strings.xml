@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProjetoPeixinho</string>
+    <string name="facebook_app_id">243179122874686</string>
+    <string name="fb_login_protocol_scheme">fb243179122874686</string>
+</resources>
