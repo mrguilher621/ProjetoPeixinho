@@ -2,28 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:backgroundTint="@android:color/holo_orange_light"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.example.guilherme.projetopeixinho.Activitys.PrincipalActivity">
 
 
     <TextView
         android:id="@+id/tvAbreEtiqueta"
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="15dp"
         android:layout_height="wrap_content"
-        android:text="NOVA ETIQUETA" />
+        android:layout_marginTop="10dp"
+        android:background="@color/cardview_light_background"
+        android:backgroundTint="@color/cardview_light_background"
+        android:gravity="center"
+        android:text="NOVA ETIQUETA"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvAbreProduto"
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:textSize="15dp"
         android:layout_height="wrap_content"
-        android:text="NOVO PRODUTO" />
+        android:layout_marginTop="10dp"
+        android:background="@color/cardview_light_background"
+        android:gravity="center"
+        android:text="NOVO PRODUTO"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 </LinearLayout>

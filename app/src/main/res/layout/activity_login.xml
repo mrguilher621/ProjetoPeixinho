@@ -2,43 +2,57 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_marginBottom="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="16dp"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.guilherme.projetopeixinho.Activitys.LoginActivity">
+    android:background="@android:color/holo_orange_light"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.guilherme.projetopeixinho.Activitys.LoginActivity"
+    android:weightSum="1">
 
     <EditText
         android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:background="@color/cardview_light_background"
         android:hint="E-Mail"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="false"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic" />
 
     <EditText
-        android:layout_width="match_parent"
         android:id="@+id/edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:background="@color/cardview_light_background"
         android:hint="SENHA"
         android:inputType="textPassword"
-        android:layout_height="wrap_content" />
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnLogar"
-        android:text="LOGIN"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:background="@color/cardview_light_background"
+        android:text="LOGIN"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvAbreCadastro"
         android:layout_width="match_parent"
-        android:gravity="center"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textSize="15sp"
+        android:background="@color/cardview_light_background"
+        android:gravity="center"
         android:text="Não tem cadastro? Clique aqui"
-        android:layout_height="wrap_content" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

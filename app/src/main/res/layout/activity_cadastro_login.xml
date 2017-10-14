@@ -1,49 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical"
     tools:context="com.example.guilherme.projetopeixinho.Activitys.CadastroLoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/edtcadEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/background_light"
                 android:hint="E-MAIL"
                 android:inputType="textEmailAddress"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/edtcadSenha"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@android:color/background_light"
                 android:hint="SENHA"
                 android:inputType="textPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/edtcadConfirmarSenha"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/background_light"
                 android:hint="CONFIRMAR SENHA"
                 android:inputType="textPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnGravar"
-                android:text="GRAVAR"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="@android:color/background_light"
+                android:text="GRAVAR"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
     </ScrollView>
-</LinearLayout>
+</RelativeLayout>
